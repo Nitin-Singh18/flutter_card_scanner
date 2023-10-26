@@ -1,3 +1,4 @@
+import 'package:card_scanner/view/home_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,21 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.cyan,
       ),
-      home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home Page'),
-      ),
-      body: Container(),
+      home: const HomeView(),
     );
   }
 }
